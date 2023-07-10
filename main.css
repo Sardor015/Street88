@@ -1,3 +1,4 @@
+/* @import url(./font.css); */
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
@@ -22,6 +23,7 @@ body {
     max-width: 1600px;
     width: 100%;
     background: var(--bck);
+    font-family: var(--fm-2);
 }
 
 .link1 {
@@ -178,13 +180,14 @@ body {
     padding: 33px 76px;
     background: rgba(105, 207, 23, 0.5);
     backdrop-filter: blur(9px);
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-weight: 100;
     font-size: 50px;
     line-height: 25px;
     color: var(--white);
     transition: .5s;
 }
+
 .btn1:hover {
     background: #040D1F;
     color: #F18128;
@@ -201,6 +204,7 @@ body {
     border: 0;
     transition: .5s;
 }
+
 .btn2:hover {
     background: #040D1F;
     color: #F18128;
@@ -365,26 +369,51 @@ main {
 
 
 /* decs html */
-.section1 {
-    margin: 0 0 30px 200px;
 
+
+
+.section1__parda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.parda__text {
-    color: var(--btn);
+.section1__title {
+    position: absolute;
+    color: rgba(105, 207, 23, 0.70);
+    text-shadow: 0px 0px 15px 0px rgba(191, 171, 171, 0.40);
+    font-family: var(--fm-2);
+    font-size: 55px;
+    font-weight: 700;
     text-transform: uppercase;
+    z-index: -1;
+    transition: .5s;
+    transform: scale(0);
 }
 
-.section1__img {
-    padding-bottom: 30px;
+.section1__image {
+    max-width: 1150px;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    padding: 0 0 30px 50px;
+}
+
+.section1__parda:hover .section1__title {
+
+    z-index: 1;
+    transform: scale(1);
+
 }
 
 .section1__text {
-    color: var(--white);
     max-width: 1110px;
     width: 100%;
-    font-weight: 700;
-    line-height: 25px;
+    color: var(--white);
     text-align: justify;
-    font-size: 18px
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-left: 190px;
 }
