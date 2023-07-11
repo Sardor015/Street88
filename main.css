@@ -391,13 +391,20 @@ main {
     transition: .5s;
     transform: scale(0);
 }
+.section1__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
 
 .section1__image {
     max-width: 1150px;
     height: 100%;
     object-fit: cover;
     transition: .5s;
-    padding: 0 0 30px 50px;
+    /* padding: 0 0 30px 50px; */
 }
 
 .section1__parda:hover .section1__title {
@@ -415,5 +422,5 @@ main {
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
-    margin-left: 225px;
+    /* margin-left: 225px; */
 }
